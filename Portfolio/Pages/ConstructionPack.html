@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+            .row
+            {
+                display: flex;
+
+                justify-content: space-around;
+            }
+
+            .card
+            {
+                display: block;
+
+                width: 350px;
+
+                text-decoration: none;
+
+                color: black;
+
+                transition: 0.2s ease;
+            }
+
+            .card img
+            {
+                height: 200px;
+                width: 300px;
+
+                object-fit: cover;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Construction Asset Pack</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                This pack contains several construction assets. This is very old and does not reflect
+                my current skill level, it will be replaced soon.
+            </p>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Render</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Render.png" alt="Image">
+                    <p class="TextLayout">The render of all assets.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Cement Bags</h3>
+                    <img src="Images/AssetImages/ConstructionPack/CementBags.png" alt="Image">
+                    <p class="TextLayout">The cement bags. <br> ~4K+ triangles.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Toolbox</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Toolbox.png" alt="Image">
+                    <p class="TextLayout">The toolbox. <br> 1.5K triangles.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Pallet</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Pallet.png" alt="Image">
+                    <p class="TextLayout">A wooden pallet. <br> 300 triangles.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Crate</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Crate.png" alt="Image">
+                    <p class="TextLayout">A crate. <br> 200 triangles</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Drill</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Drill.png" alt="Image">
+                    <p class="TextLayout">An orange power drill. <br> 2K triangles.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Hardhat (front)</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Hardhat Front.png" alt="Image">
+                    <p class="TextLayout">The front of the UGC-supported hard hat. <br> 3.7K triangles.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Hardhat (back)</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Hardhat Back.png" alt="Image">
+                    <p class="TextLayout">The back of the UGC-supported hard hat. <br> 3.7k triangles.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Cone</h3>
+                    <img src="Images/AssetImages/ConstructionPack/Cone.png" alt="Image">
+                    <p class="TextLayout">A cone.<br> 400 triangles.</p>
+                </div>
+            </div>
+
+            <h3 class="TextLayout">Asset Information</h3>
+            <p class="TextLayout">
+                There are more assets included here, such as a cinder block, hammer, and small stack of cinder blocks.
+                These can all be seen in the render. <br>
+
+                Total Triangle Count: 22,000 <br>
+                Time to Create: ~4 Hours <br>
+                For sale: Yes
+            </p>
+            
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

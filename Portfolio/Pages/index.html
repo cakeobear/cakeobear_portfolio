@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Home</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                Hi! I am an affordable English-speaking game developer who specializes in modelling, texturing,
+                and optimisation. I always ensure I pay attention to detail to all assets I create and I am
+                constantly learning new things! I can model assets in every poly-type, from low to high poly, and
+                ensure a performant triangle count for every asset.
+            </p>
+
+            <h2 class="TextLayout">What skillsets do I have experience in?</h2>
+            <p class="TextLayout">
+                As stated prior, I predominantly work around modelling, but I do possess other helpful skills to
+                ensure maximum quality in projects.
+            <ul class="TextLayout" style="display: inline-block;  text-align: left;">
+                <li>3D modelling: 1 year+</li>
+                <li>Texturing [Substance Painter]: 3 months+</li>
+                <li>QA Testing: 2 years+</li>
+
+                <p style="text-align: center;">My pricing is listed <a href="Pricing.html">here</a>, be sure to read through them before hiring me!</p>
+            </ul>
+
+            <h2 class="TextLayout">Links</h2>
+            <ul class="TextLayout" style= "display: inline-block; text-align: left; transform: translateY(-20px);">
+                <li>Be sure to check out my Itch.IO account <a href="https://cakeobear.itch.io/">here!</a></li>
+                <li><a href="https://www.roblox.com/users/1809571952/profile">Here</a> is my Roblox profile - feel free to give me a follow!</li>
+            </ul>
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

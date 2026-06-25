@@ -1,0 +1,341 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+            .row
+            {
+                display: flex;
+
+                justify-content: space-around;
+            }
+
+            .card
+            {
+                display: block;
+
+                width: 350px;
+
+                text-decoration: none;
+
+                color: black;
+
+                transition: 0.2s ease;
+            }
+
+            .card img
+            {
+                height: 200px;
+                width: 300px;
+
+                object-fit: cover;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+            .forSale {
+                position: absolute;
+
+                background-color: lightgreen;
+                display: flex;
+
+                color: black;
+
+                justify-content: center;
+
+                transform: translateY(-8px);
+
+                height: 40px;
+                width: 45px;
+
+                border-style: dotted;
+
+                margin-bottom: 2px;
+            }
+
+            .notForSale {
+                position: absolute;
+
+                background-color: lightcoral;
+                display: flex;
+
+                color: black;
+
+                justify-content: center;
+
+                transform: translateY(-8px);
+
+                height: 40px;
+                width: 65px;
+
+                border-style: dotted;
+
+                margin-bottom: 2px;
+            }
+
+            .forSale p {
+                margin: 0;
+            }
+            .notForSale p {
+                margin: 0;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html"class="active">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Assets</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                This page displays my best work. I am constantly learning new things and improving my
+                skills, so everything you see here is fully subject to change. I have hand created all 
+                of these assets by hand with no use of artificial intelligence or free model assets.
+                To view an asset and its details (e.g. triangle count), just click on the image to be sent to its detail page!
+            </p>
+
+            <div class="row">
+                <a href="Corkboard.html" class="card">
+                    <h3 class="TextLayout">Corkboard</h3>
+                    <div class="forSale">
+                        <p class="TextLayout">For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/Corkboard/CorkboardImageMain.png" alt="Image">
+                    <p class="TextLayout">This is a realistic corkboard created in Blender and textured in Substance Painter.</p>
+                </a>
+
+                <a href="ConstructionPack.html" class="card">
+                    <h3 class="TextLayout">Construction Asset Pack</h3>
+                    <div class="forSale">
+                        <p class="TextLayout">For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/ConstructionPack/Render.png" alt="Image">
+                    <p class="TextLayout">
+                        This is a huge asset pack with several construction assets. This includes
+                        a fully UGC supported construction hat. Assets can be sold individually.
+                    </p>
+                </a>
+
+                <a href="PandaBeany.html" class="card">
+                    <h3 class="TextLayout">Panda Beany</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">Not For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/PandaBeany/PandaBeany.png" alt="Image">
+                    <p class="TextLayout">
+                        This is a realistic panda beany hat that was published as a UGC item.
+                    </p>
+                </a>
+            </div>
+
+            <div class="row">
+                <a href="OilBarrels.html" class="card">
+                    <h3 class="TextLayout">Oil Barrels</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">Not For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/Oil Barrels/Front.png" alt="Image">
+                    <p class="TextLayout">
+                        A realistic oil barrel with 3 colour variants.
+                        It has rust, scratches, and oxidization.
+                    </p>
+                </a>
+                <a href="Backrooms.html" class="card">
+                    <h3 class="TextLayout">Backrooms Scene</h3>
+                    <div class="forSale">
+                        <p class="TextLayout">For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/Backrooms/MainRender.png" alt="Image">
+                    <p class="TextLayout">
+                        A small semi-realistic backrooms scene. All assets are created by me besides
+                        the images for the walls, floor, and celing.
+                    </p>
+                </a>
+                <a href="BarrierPack.html" class="card">
+                    <h3 class="TextLayout">Barrier Pack</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">Not For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/BarrierPack/Main.png" alt="Image">
+                    <p class="TextLayout">
+                        A barrier asset pack with several assets. This was made in Blender.
+                    </p>
+                </a>
+            </div>
+            <div class="row">
+                <a href="NaturePack.html" class="card">
+                    <h3 class="TextLayout">Nature Pack</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">Not For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/NaturePack/Main.png" alt="Image">
+                    <p class="TextLayout">
+                        A small, low-poly asset pack with a handful of nature assets and gradient textures.
+                    </p>
+                </a>
+                <a href="Foods.html" class="card">
+                    <h3 class="TextLayout">Philippines-style Food</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">Not For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/FoodPack/Main.png" alt="Image">
+                    <p class="TextLayout">
+                        A pack of Philippines-style foods. This was made for a commision a while back,
+                        some assets are textured using both Roblox Studio and Substance Painter.
+                        The screenshots have awful lighting and a bad resolution, sadly.
+                    </p>
+                </a>
+                <a href="GamingSetup.html" class="card">
+                    <h3 class="TextLayout">Gaming Setup</h3>
+                    <div class="forSale">
+                        <p class="TextLayout">For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/GamingAssets/Main.png" alt="Image">
+                    <p class="TextLayout">
+                        This is a small pack of gaming setup items. The headset is completely UGC supported 
+                        and all assets are as optimized as I could make them. There is clean topology throughout
+                        all assets and everything was textured using either Blender or Substance Painter.
+                    </p>
+                </a>
+            </div>
+            <div class="row">
+                <a href="Spacelite.html" class="card">
+                    <h3 class="TextLayout">Spacelite [Game]</h3>
+                    <div class="notForSale">
+                        <p class="TextLayout">For Sale</p>
+                    </div>
+                    <img src="Images/AssetImages/Spacelite/Thumb1.png" alt="Image">
+                    <p class="TextLayout">
+                        I made this game in a few hours for a game jam a little while back, the assets are quite rushed
+                        but the result is pretty good. <a>Click Here</a> to have a look!
+                    </p>
+                </a>
+            </div>
+
+
+            <h2 class="TextLayout">Purchasing Details</h2>
+            <p class="TextLayout">
+                If you wish to purchase any assets that are for sale, we can negotiate a price in direct messages!
+                My Discord user is 'cakeobear' if you wish to contact me! Assets will be resold to multiple users.
+                I do not mind what you do with the assets providing you do not resell them or claim you created them yourself.
+                All assets can be sold individually!
+            </p>
+            
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

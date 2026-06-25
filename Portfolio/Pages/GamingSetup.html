@@ -1,0 +1,272 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+            .row
+            {
+                display: flex;
+
+                justify-content: space-around;
+            }
+
+            .card
+            {
+                display: block;
+
+                width: 350px;
+
+                text-decoration: none;
+
+                color: black;
+
+                transition: 0.2s ease;
+            }
+
+            .card img
+            {
+                height: 200px;
+                width: 300px;
+
+                object-fit: cover;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Gaming Setup</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                A small group of gaming setup assets! All assets are as optimized as I was 
+                able to make them and maintain clean topology. Each asset was textured in either 
+                Blender or Substance Painter, with appropriate UV unwrapping to allow for smooth 
+                textures.
+            </p>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Render</h3>
+                    <img src="Images/AssetImages/GamingAssets/Main.png" alt="Image">
+                    <p class="TextLayout">The render.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Desk</h3>
+                    <img src="Images/AssetImages/GamingAssets/Desk.png" alt="Image">
+                    <p class="TextLayout">A white, wooden desk with drawers and shelving. Triangles: 500</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Chair [Front]</h3>
+                    <img src="Images/AssetImages/GamingAssets/ChairFront.png" alt="Image">
+                    <p class="TextLayout">The front of the gaming chair! Triangles: 3700</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Chair [Back]</h3>
+                    <img src="Images/AssetImages/GamingAssets/ChairBack.png" alt="Image">
+                    <p class="TextLayout">The back of the gaming chair!</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Headset [Front]</h3>
+                    <img src="Images/AssetImages/GamingAssets/HeadsetFront.png" alt="Image">
+                    <p class="TextLayout">The UGC-supported headset. Triangles: 3.7k</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Headset [Back]</h3>
+                    <img src="Images/AssetImages/GamingAssets/HeadsetBack.png" alt="Image">
+                    <p class="TextLayout">The back of the UGC-supported headset.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Monitor</h3>
+                    <img src="Images/AssetImages/GamingAssets/Monitor.png" alt="Image">
+                    <p class="TextLayout">The monitor with emission (basically fake light). Triangles: 400</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Headset Holder</h3>
+                    <img src="Images/AssetImages/GamingAssets/HeadsetHolder.png" alt="Image">
+                    <p class="TextLayout">The holder for the headset, of course with clean topology. Triangles: 500</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Speaker</h3>
+                    <img src="Images/AssetImages/GamingAssets/Speaker.png" alt="Image">
+                    <p class="TextLayout">The speaker! The actual grill texture was not made by me 
+                        but is fully royalty free. Triangles: 100
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Microphone</h3>
+                    <img src="Images/AssetImages/GamingAssets/Microphone.png" alt="Image">
+                    <p class="TextLayout">The microphone! It uses the same grill as the speakers! Triangles: 1100</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Mouse</h3>
+                    <img src="Images/AssetImages/GamingAssets/Mouse.png" alt="Image">
+                    <p class="TextLayout">The office mouse! I went for a more office-esque vibe for this! Triangles: 1000</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Mouse [Bottom]</h3>
+                    <img src="Images/AssetImages/GamingAssets/Speaker.png" alt="Image">
+                    <p class="TextLayout">The bottom of the mouse!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Keyboard</h3>
+                    <img src="Images/AssetImages/GamingAssets/KeyboardFront.png" alt="Image">
+                    <p class="TextLayout">A keyboard! Each key is 3D of course, I did not add letters 
+                        as it is too much work. Triangles: 1200
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Keyboard [Bottom]</h3>
+                    <img src="Images/AssetImages/GamingAssets/KeyboardBottom.png" alt="Image">
+                    <p class="TextLayout">The bottom of the keyboard!</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">PC</h3>
+                    <img src="Images/AssetImages/GamingAssets/PCFront.png" alt="Image">
+                    <p class="TextLayout">The PC! I went for a more office/work computer vibe for this! Triangles: 2300</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">PC [Back]</h3>
+                    <img src="Images/AssetImages/GamingAssets/PCBackpng.png" alt="Image">
+                    <p class="TextLayout">The back of the PC! It has some extra detail!
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="TextLayout">Asset Information</h3>
+            <p class="TextLayout">
+                Triangle Count [total]: 15,000 <br>
+                Time to Create: Too long. (Like 5 hours) <br>
+                For sale: Yes
+            </p>
+            
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+            .row
+            {
+                display: flex;
+
+                justify-content: space-around;
+            }
+
+            .card
+            {
+                display: block;
+
+                width: 350px;
+
+                text-decoration: none;
+
+                color: black;
+
+                transition: 0.2s ease;
+            }
+
+            .card img
+            {
+                height: 200px;
+                width: 300px;
+
+                object-fit: cover;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Backrooms Scene</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                I have created all assets, from the clothing to the masks, excluding the textures
+                for the walls, floor, and celing. All assets highly optimized, with all character accessory items
+                suitable for UGC publishing. All assets are textured with careful attention to detail
+                in Substance Painter! Assets can be sold individually.
+            </p>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Main Render</h3>
+                    <img src="Images/AssetImages/Backrooms/MainRender.png" alt="Image">
+                    <p class="TextLayout">The main render taken in Blender. Triangles: 43K</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Gas Mask [Front]</h3>
+                    <img src="Images/AssetImages/Backrooms/Gasmask.png" alt="Image">
+                    <p class="TextLayout">A front view of the gas mask. Triangles: 3.9K</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Gas Mask [Back]</h3>
+                    <img src="Images/AssetImages/Backrooms/GasMaskBack.png" alt="Image">
+                    <p class="TextLayout">A view behind of the gas mask. Triangles: 3.9K</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Flashlight</h3>
+                    <img src="Images/AssetImages/Backrooms/Flashlight.png" alt="Image">
+                    <p class="TextLayout">The flashlight. Trangles: 830</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Key</h3>
+                    <img src="Images/AssetImages/Backrooms/key.png" alt="Image">
+                    <p class="TextLayout">A damaged golden key. Triangles: 420</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Explorer</h3>
+                    <img src="Images/AssetImages/Backrooms/Explorer.png" alt="Image">
+                    <p class="TextLayout">The explorer. <br>Trangles: 11,200 (the Roblox R15 character mesh is about 4.5K) </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Hood</h3>
+                    <img src="Images/AssetImages/Backrooms/Hood.png" alt="Image">
+                    <p class="TextLayout">The yellow hood worn by the explorers. <br>Triangles: 3800</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Outfit [Front]</h3>
+                    <img src="Images/AssetImages/Backrooms/Clothing.png" alt="Image">
+                    <p class="TextLayout">A front view of the custom explorer clothing created by me.</p>
+                </div>
+                <div class="card">
+                    <h3 class="TextLayout">Outfit [Back]</h3>
+                    <img src="Images/AssetImages/Backrooms/ClothingBack.png" alt="Image">
+                    <p class="TextLayout">A view of the back of the custom explore outfit.</p>
+                </div>
+            </div>
+
+            <h3 class="TextLayout">Asset Information</h3>
+            <p class="TextLayout">
+                Total Triangle Count <br>(One of each asset): 12,500 <br>
+                Time to Create: 5 hours (including render setup) <br>
+                For sale: Yes
+            </p>
+            
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

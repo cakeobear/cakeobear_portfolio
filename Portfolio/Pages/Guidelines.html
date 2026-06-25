@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html"class="active">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Guidelines</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                In order for us to have a fully trustworthy transaction, I have established some
+                small guidelines I expect you to follow when working with me! Thanks!
+            </p>
+
+            <ul class="TextLayout" style="display: inline-block;  text-align: left; list-style-type: decimal;">
+                <li><strong>Respect: </strong>This is a huge must-have. Insults, harrassment, or
+                any other offensive method of abuse is NOT tolerated.</li>
+                <li><strong>You Pay First: </strong>As standard business practice goes,
+                you must send me my payment before I send you the asset. In order to ensure
+            the trust and safety of both of us, I can send any proof of development you require, thanks!
+        This is not up for negotiation.</li>
+
+                <li><strong>Deadlines: </strong>If you have a deadline, tell me it before I begin developing.</li>
+                <li><strong>Payment clarification: </strong>Before I begin development, we must negotiate the pricing.
+                I will not begin development until a fixed price is determined.</li>
+                <li><strong>No excessive edits: </strong>While I am happy to make some changes to fully match
+                an asset to your intended quality/liking, if you request an excessive amount of edits I will
+            up the price of the asset. This value is subject to change, but as of the present, you are capped 
+        at 3 small edits.</li>
+                <li><strong>References/Detailed Descriptions: </strong>I would appreciate reference images and/or descriptions 
+                of your intended asset(s).</li>
+                <li><strong>Time Wasting: </strong>if you waste my time, I will just block you. It wastes both of our time, just don't do it.</li>
+                <li><strong>Scamming: </strong>Obviously, any attempt to scam me or steal my work without proper payment will result in a block,
+                and I will report you.</li>
+                <li><strong>Be Somewhat Active: </strong>If you are hiring me, please do not go inactive for prolonged periods of time.
+                I do not want to be waiting for you to reply back to me. I fully undertand that things come up,
+            but please tell me in advance - thanks!</li>
+            <li><strong>No Competing Developers: </strong>When hiring me, I do not wish to compete against other developers for the role.
+            If you choose to hire me, I expect only me to be developing on the task (unless you have a team of course, that's understadable).</li>
+            </ul>
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

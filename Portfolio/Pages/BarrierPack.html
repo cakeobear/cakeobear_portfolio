@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cakeobearPortfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+        <style>
+            .TextLayout{
+                text-align: center;
+                font-family: "Google Sans Flex";
+            }
+
+            h1, h2, h3{
+                color: rgb(39, 106, 142);
+            }
+
+            nav{
+                padding-top: 2%;
+            }
+
+            nav ul{
+                display: flex;
+
+                background-color: whitesmoke;
+                list-style-type: none;
+
+                margin: 0px;
+                padding: 0px;
+
+                width: 100%;
+            }
+
+            nav ul li{
+                flex: 1;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+
+                color: black;
+
+                display: block;
+                padding: 14px;
+
+                transition: 0.2s ease;
+            }
+
+            nav ul li a.active{
+                background-color: lightgrey;
+                text-decoration: underline;
+            }
+
+            nav ul li a:not(.active):hover {
+                background-color: lightgray;
+                text-decoration: underline;
+
+                transform: scale(1.05); 
+            }
+            body
+            {
+                min-height: 100dvh; 
+
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            footer{
+                background-color: whitesmoke;
+
+                margin-top: auto;
+            }
+
+            main ul
+            {
+                list-style-position: inside;
+            }
+
+            .logo
+            {
+                position: absolute;
+
+                transform: translateY(-35px);
+
+                width: 100px;
+                height: 100px;
+
+                z-index: 5;
+            }
+
+            nav ul li:first-child
+            {
+                margin-left: 80px;
+            }
+            nav ul li:last-child
+            {
+                margin-right: 80px;
+            }
+
+            main ul li
+            {
+                margin-top: 20px;
+            }
+
+            .row
+            {
+                display: flex;
+
+                justify-content: space-around;
+            }
+
+            .card
+            {
+                display: block;
+
+                width: 350px;
+
+                text-decoration: none;
+
+                color: black;
+
+                transition: 0.2s ease;
+            }
+
+            .card img
+            {
+                height: 200px;
+                width: 300px;
+
+                object-fit: cover;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="Images/Logo.png" alt="Logo">
+            <ul class="TextLayout">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Guidelines.html">Guidelines</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Assets.html">3D Assets</a></li>
+            </ul>
+        </nav>
+
+        <main style="text-align: center;">
+            <h1 class="TextLayout">Barrier Pack</h1>
+            <p class="TextLayout" style="transform: translateY(-20px);">
+                This is a small asset pack with optimized barrier assets. This is quite old and was 
+                made for a commision a small while back. This is soon to be replaced. All assets 
+                were screenshotted inside of studio, the white dot material is a MaterialVariant.
+            </p>
+
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">All assets</h3>
+                    <img src="Images/AssetImages/BarrierPack/Main.png" alt="Image">
+                    <p class="TextLayout">All of the barrier assets.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Blockades</h3>
+                    <img src="Images/AssetImages/BarrierPack/Blockers.png" alt="Image">
+                    <p class="TextLayout">Two cylindrical blockades.<br>
+                    Orange Barrier Tris: 1300, Red Palisade Tris: 200 
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Fence barrier</h3>
+                    <img src="Images/AssetImages/BarrierPack/Fence.png" alt="Image">
+                    <p class="TextLayout">A fence-like blocker. Triangles: 500
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3 class="TextLayout">Barrier</h3>
+                    <img src="Images/AssetImages/BarrierPack/HoopBarrier.png" alt="Image">
+                    <p class="TextLayout">A barrier with hoops! Triangles: 900</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Stop sign</h3>
+                    <img src="Images/AssetImages/BarrierPack/StopSign.png" alt="Image">
+                    <p class="TextLayout">A hexagonal stop sign. Triangles: 120</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="TextLayout">Barriers</h3>
+                    <img src="Images/AssetImages/BarrierPack/PlasticBarrier.png" alt="Image">
+                    <p class="TextLayout">Two color variants of a barrier. Triangles(each): 600</p>
+                </div>
+            </div>
+
+            <h3 class="TextLayout">Asset Information</h3>
+            <p class="TextLayout">
+                Triangle Count [total]: 3600 <br>
+                Time to Create: ~2 Hours <br>
+                For sale: No
+            </p>
+            
+        </main>
+
+        <footer>
+            <p class="TextLayout">&copy;2026 cakeobear. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
